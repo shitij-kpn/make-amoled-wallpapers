@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./output.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main
+      id="main"
+      class="min-h-screen bg-black flex justify-center items-center text-white flex-col font-mono"
+    >
+      <div>
+        10
+        <input
+          type="range"
+          name="intensity"
+          id="slider"
+          min="10"
+          max="100"
+          step="10"
+          class="border-2 p-4"
+        />100
+      </div>
+      <div
+        id="io"
+        class="bg-white flex flex-col mobile:flex-row items-center justify-between gap-4 p-4"
+      ></div>
+      <div class="flex gap-4 pt-4">
+        <label for="wallpaper" class="border-2 p-4">Upload File</label>
+        <input type="file" name="wallpaper" id="wallpaper" accept="image/*" />
+        <button id="download-button" class="border-2 p-4" onclick="download()">
+          Download
+        </button>
+      </div>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
