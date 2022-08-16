@@ -1,3 +1,3 @@
-# Make AMOLED wallpapers
+# Make AMOLED Backgrounds
 
 ![Home](./ss.png)
